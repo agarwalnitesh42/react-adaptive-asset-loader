@@ -1,0 +1,23 @@
+{
+  "name": "react-adaptive-asset-loader",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-react": "^7.22.5",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}

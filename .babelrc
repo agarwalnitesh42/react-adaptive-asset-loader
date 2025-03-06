@@ -1,0 +1,7 @@
+// .babelrc
+{
+    "presets": [
+        "@babel/preset-env", // Transpiles modern JS for browser compatibility
+        "@babel/preset-react" // Transforms JSX into JavaScript
+    ]
+}

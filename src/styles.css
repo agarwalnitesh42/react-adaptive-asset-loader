@@ -1,0 +1,75 @@
+/* src/styles.css */
+/* Base container for the asset loader, ensuring proper layout */
+.asset-loader {
+    position: relative;
+    /* Allows absolute positioning of child elements */
+    display: inline-block;
+    /* Maintains natural flow with surrounding content */
+    width: 100%;
+    /* Full width by default, adjustable via parent */
+    max-width: 100%;
+    /* Prevents overflow */
+}
+
+/* Placeholder for loading assets to avoid layout shifts */
+.loading-placeholder {
+    width: 100%;
+    /* Matches the asset size */
+    height: 200px;
+    /* Default height, adjustable via props in future */
+    background-color: #f0f0f0;
+    /* Light gray for visibility */
+    border: 1px dashed #ccc;
+    /* Dashed border to indicate loading */
+    text-align: center;
+    /* Center the loading text */
+    line-height: 200px;
+    /* Vertically center text */
+    color: #666;
+    /* Subtle text color */
+    font-size: 14px;
+    /* Readable size */
+}
+
+/* Style for the actual asset (image or script placeholder) */
+.asset-loader img,
+.asset-loader span {
+    max-width: 100%;
+    /* Responsive image sizing */
+    height: auto;
+    /* Maintain aspect ratio */
+    transition: opacity 0.3s ease;
+    /* Smooth fade-in for loaded assets */
+    opacity: 0;
+    /* Start hidden, fade in on load */
+}
+
+.asset-loader img.loaded,
+.asset-loader span.loaded {
+    opacity: 1;
+    /* Fade in when loaded */
+}
+
+/* Debug information display for developers */
+.debug-info {
+    position: absolute;
+    /* Position over the asset */
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black */
+    color: #fff;
+    /* White text for contrast */
+    padding: 4px 8px;
+    /* Compact padding */
+    font-size: 12px;
+    /* Small text to avoid clutter */
+    border-radius: 4px 4px 0 0;
+    /* Rounded top corners */
+    z-index: 10;
+    /* Above other elements */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+
+/* Security note: No dynamic styles from user input to prevent CSS injection */
