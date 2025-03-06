@@ -1,6 +1,6 @@
 {
   "name": "react-adaptive-asset-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -19,5 +19,17 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-postcss": "^4.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agarwalnitesh42/react-adaptive-asset-loader.git"
+  },
+  "homepage": "https://github.com/agarwalnitesh42/react-adaptive-asset-loader",
+  "keywords": [
+    "react",
+    "javascript",
+    "performance",
+    "asset-loading",
+    "optimization"
+  ]
 }
